@@ -15,8 +15,9 @@ services:
       - FLASK_ENV=${FLASK_ENV:-development}
       - FLASK_DEBUG=${FLASK_DEBUG:-True}
       - SECRET_KEY=${SECRET_KEY:-dev-secret-key-change-in-production}
+      # Shared key: Azure Key Vault kv-demo-apps-shared, secret Demo-Apps-Share-API-Key
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - CLAUDE_MODEL=${CLAUDE_MODEL:-claude-sonnet-4-20250514}
+      - CLAUDE_MODEL=${CLAUDE_MODEL:-claude-sonnet-5-5}
       - CLAUDE_MAX_TOKENS=${CLAUDE_MAX_TOKENS:-4096}
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
     volumes:

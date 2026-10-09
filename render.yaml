@@ -15,6 +15,6 @@ services:
       - key: FLASK_DEBUG
         value: "False"
       - key: ANTHROPIC_API_KEY
-        sync: false  # Set manually in Render dashboard
+        sync: false  # Value comes from Key Vault secret Demo-Apps-Share-API-Key (kv-demo-apps-shared); set it in the Render dashboard
       - key: DATABASE_URL
         sync: false  # Set manually after creating database

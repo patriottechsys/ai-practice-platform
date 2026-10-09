@@ -172,7 +172,7 @@
 - [ ] Security Intelligence → Render (https://github.com/Texasdada13/security-intelligence)
 - [ ] Executive Intelligence → Render (https://github.com/Texasdada13/executive-intelligence)
 
-**Note:** Deploy via Render Dashboard → New → Blueprint. Set ANTHROPIC_API_KEY manually after deployment.
+**Note:** Deploy via Render Dashboard → New → Blueprint. Set ANTHROPIC_API_KEY manually after deployment using the shared secret `Demo-Apps-Share-API-Key` in Key Vault `kv-demo-apps-shared` (see README.md, "LLM API key").
 
 ---
 

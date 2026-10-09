@@ -19,7 +19,7 @@ class Config:
 
     # Claude API
     ANTHROPIC_API_KEY: Optional[str] = os.environ.get('ANTHROPIC_API_KEY')
-    CLAUDE_MODEL: str = os.environ.get('CLAUDE_MODEL', 'claude-sonnet-4-20250514')
+    CLAUDE_MODEL: str = os.environ.get('CLAUDE_MODEL', 'claude-sonnet-5-5')
     CLAUDE_MAX_TOKENS: int = int(os.environ.get('CLAUDE_MAX_TOKENS', 4096))
 
     # Database (for future use)

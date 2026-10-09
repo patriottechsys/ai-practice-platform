@@ -63,7 +63,7 @@ class ClaudeClient:
     - Recommendation generation
     """
 
-    DEFAULT_MODEL = "claude-sonnet-4-20250514"
+    DEFAULT_MODEL = "claude-sonnet-5-5"
     MAX_TOKENS = 4096
 
     # System prompts for different contexts
@@ -112,7 +112,7 @@ Focus on:
 
         Args:
             api_key: Anthropic API key (defaults to ANTHROPIC_API_KEY env var)
-            model: Model to use (defaults to claude-sonnet-4-20250514)
+            model: Model to use (defaults to claude-sonnet-5-5)
         """
         self.api_key = api_key or os.environ.get('ANTHROPIC_API_KEY')
         self.model = model or self.DEFAULT_MODEL
